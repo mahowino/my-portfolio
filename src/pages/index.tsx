@@ -15,6 +15,7 @@ import consulting from '../../public/consulting.png'
 import mahalon from '../../public/mahalon.jpeg'
 import poolr from '../../public/Poolr.jpg'
 import poolrDriver from '../../public/PoolrDriver.jpg'
+import portfolio from '../../public/portfolio.png'
 import { Typography } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,12 +31,12 @@ export default function Home() {
       <section className=" min-h-screen">
         <nav className='py-10 mb-12 flex justify-between'>
           <h1 className='text-black'>MAHALON OWINO</h1>
-          <ul className='flex justify-center'>
+          {/* <ul className='flex justify-center'>
             <li><BsFillMoonStarsFill/></li>
             <li >
-              <a className='bg-gray-800 text-white px-4 py-2 border-none rounded-md ml-8'>Resume</a>
+              <a  className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Resume</a>
             </li>
-          </ul>
+          </ul> */}
         </nav>
         <div className='text-center p-10'>
         <h2 className='text-5xl py-2 text-gray-800 font-medium md:text-6xl'>Mahalon Owino</h2>
@@ -43,11 +44,11 @@ export default function Home() {
 
         <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
         I am a recent graduate of Computer Science and a largely self-taught
-full-stack developer who has experience implementing solutions
-using, Java Spring framework, Angular, Typescript, React, JavaScript
-and rest APIs among others. I am highly analytical and an effective
-problem-solver, who thrives in a collaborative atmosphere to deliver
-quality results.
+        full-stack developer who has experience implementing solutions
+        using, Java Spring framework, Angular, Typescript, React, JavaScript
+        and rest APIs among others. I am highly analytical and an effective
+        problem-solver, who thrives in a collaborative atmosphere to deliver
+        quality results.
         </p>
 
       </div>
@@ -56,50 +57,66 @@ quality results.
         <a><AiFillGithub/></a>
         <a><AiFillLinkedin/></a>
       </div>
-      <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden md:h-96 md:w-96'>
+      <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden md:h-90 md:w-90'>
         <Image src={mahalon} alt="alternative"  layout='fill' objectFit='cover' />
       </div>
       </section>
       <section>
         <div className='text-left p-10 mt-20'>
           <h2  className='text-2xl py-2 mb-2 mt-0 text-4xl font-medium leading-tight text-primary'>Services I  offer</h2>
-          <p className='text-md py-5 leading-8 text-gray-800'> Self-Taught, Always learning ,Full Stack Developer with strong knowledge in developing web apps. Effective at problem-solving and project management, with a focus on delivering quality results.</p>
+          <p className='text-md py-5 leading-8 text-gray-800'> 
+          Self-Taught, Always learning ,
+          Full Stack Developer with strong knowledge in developing web apps.
+           Effective at problem-solving and project management,
+            with a focus on delivering quality results.
+            As a Full Stack Developer, I have a strong knowledge of web app development and am adept at problem-solving and project management. 
+
+        In my previous roles as a Full Stack Developer at Soma and during freelancing, I have gained hands-on experience in technologies such as Java Spring Framework, TypeScript, JavaScript, Angular, and React. 
+
+        I also led development for Full Stack projects involving Angular, rxjs, Java Spring, Flutter, JWT tokens, and Kotlin in creative ways, while managing project timelines, resources, and quality to ensure client satisfaction. 
+
+        I am a graduate with a BSc in Computer Science from Kenyatta University and an Android Development Certificate from Emobilis.
+            </p>
           
 
         </div>
-        <div className='lg:flex gap-10'>
+        <div className='lg:justify-evenly lg:flex gap-10'>
         <div className='text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-2xl transition delay-150 duration-175 ease-in-out '>
           <Image src={design} alt='alt' width={50} height={50} className='m-auto'/>
           <h3 className='text-lg font-medium pt-8 pb-2'>Front End Engineering</h3>
-          <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi aperiam assumenda quam optio tempore quo vero? Dolorem impedit quaerat nisi amet assumenda repellat vel consequuntur aperiam, minima fugiat rerum?</p>
-          <h4 className='py-4 text-teal-500'>Tools</h4>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
+         
+          <h4 className='py-4 text-teal-500'>Some of the tools I use include:</h4>
+          <p className="text-gray-800 py-1">Kotlin (android)</p>
+          <p className="text-gray-800 py-1">React</p>
+          <p className="text-gray-800 py-1">Angular framework</p>
+          <p className="text-gray-800 py-1">Next.js Framework</p>
           <p className="text-gray-800 py-1">Java</p>
         </div>
         <div className='text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-2xl transition delay-150 duration-175 ease-in-out'>
           <Image src={code} alt='alt' width={50} height={50} className='m-auto' />
-          <h3 className='text-lg font-medium pt-8 pb-2'>Front End Engineering</h3>
-          <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi aperiam assumenda quam optio tempore quo vero? Dolorem impedit quaerat nisi amet assumenda repellat vel consequuntur aperiam, minima fugiat rerum?</p>
+          <h3 className='text-lg font-medium pt-8 pb-2'>Back End Engineering</h3>
+          
           <h4 className='py-4 text-teal-500'>Tools</h4>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
+          <p className="text-gray-800 py-1">Java- Spring</p>
+          <p className="text-gray-800 py-1">Express-js</p>
+          <p className="text-gray-800 py-1">Amazon EC2</p>
+          <p className="text-gray-800 py-1">Amazon s3</p>
+          <p className="text-gray-800 py-1">No SQL databases</p>
+          <p className="text-gray-800 py-1">SQL databases</p>
+        
         </div>
-        <div className='text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-2xl transition delay-150 duration-175 ease-in-out '>
-          <Image src={consulting} alt='alt' width={50} height={50} className='m-auto' />
-          <h3 className='text-lg font-medium pt-8 pb-2'>Front End Engineering</h3>
-          <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi aperiam assumenda quam optio tempore quo vero? Dolorem impedit quaerat nisi amet assumenda repellat vel consequuntur aperiam, minima fugiat rerum?</p>
+        <div className='text-center shadow-lg p-10 rounded-xl my-10 hover:shadow-2xl transition delay-150 duration-175 ease-in-out'>
+          <Image src={code} alt='alt' width={50} height={50} className='m-auto' />
+          <h3 className='text-lg font-medium pt-8 pb-2'>Back End Engineering</h3>
+         
           <h4 className='py-4 text-teal-500'>Tools</h4>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
-          <p className="text-gray-800 py-1">Java</p>
+          <p className="text-gray-800 py-1">Java- Spring</p>
+          <p className="text-gray-800 py-1">Express-js</p>
+          <p className="text-gray-800 py-1">Amazon EC2</p>
+          <p className="text-gray-800 py-1">Amazon s3</p>
+          <p className="text-gray-800 py-1">No SQL databases</p>
+          <p className="text-gray-800 py-1">SQL databases</p>
+        
         </div>
         </div>
 
@@ -108,42 +125,43 @@ quality results.
         <div className='basis-1/3 object-fill flex-1'>
         <h3  className='text-2xl py-2 mb-20'>Door Drop</h3>
         <Image src={DoorDrop} alt="alternative" className='rounded-lg object-cover'  layout='responsive'/>
-          <p className='text-md py-5 leading-8 text-gray-800'>   L
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-            <p className='text-md py-5 leading-8 text-gray-800'>   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Possimus aspernatur ea natus consequuntur error commodi doloremque magni distinctio cupiditate quibusdam,
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-
+          <p className='text-md py-5 leading-8 text-gray-800'> An android app which developed into a startup which was used for delivery of goods to your doorstep.</p>
+          <a href="https://github.com/mahowino/DoorDrop" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Check the code
+          </a>
         </div>
         <div className='basis-1/3 object-fill flex-1'>
         <h3  className='text-2xl py-2 mb-20'>Poolr</h3>
         <Image src={poolr} alt="alternative" className='rounded-lg object-cover'  layout='responsive'/>
-          <p className='text-md py-5 leading-8 text-gray-800'>   L
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-            <p className='text-md py-5 leading-8 text-gray-800'>   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Possimus aspernatur ea natus consequuntur error commodi doloremque magni distinctio cupiditate quibusdam,
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
+          <p className='text-md py-5 leading-8 text-gray-800'> 
+A carpooling app to give community carpools in a secure environment to lower fuel cost.</p>
+          
+        <a href="https://github.com/mahowino/Poolr_repository" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Check the code
+        </a>
 
         </div>
         <div className='basis-1/3 object-fill flex-1'>
         <h3  className='text-2xl py-2 mb-20'>Poolr Driver</h3>
         <Image src={poolrDriver} alt="alternative" className='rounded-lg object-cover'  layout='responsive'/>
-          <p className='text-md py-5 leading-8 text-gray-800'>   L
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-            <p className='text-md py-5 leading-8 text-gray-800'>   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Possimus aspernatur ea natus consequuntur error commodi doloremque magni distinctio cupiditate quibusdam,
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
+        <p className='text-md py-5 leading-8 text-gray-800'> 
+A carpooling app to give community carpools in a secure environment to lower fuel cost.</p>
+          
+        <a href="https://github.com/mahowino/Poolr_driver" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Check the code
+        </a>
 
         </div>
         <div className='basis-1/3 object-fill flex-1'>
-        <h3  className='text-2xl py-2 mb-20'>Poolr Driver</h3>
-        <Image src={poolrDriver} alt="alternative" className='rounded-lg object-cover'  layout='responsive'/>
-          <p className='text-md py-5 leading-8 text-gray-800'>   L
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-            <p className='text-md py-5 leading-8 text-gray-800'>   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Possimus aspernatur ea natus consequuntur error commodi doloremque magni distinctio cupiditate quibusdam,
-          ipsam aliquid quae architecto nam repudiandae quia, quidem eligendi culpa.</p>
-
+        <h3  className='text-2xl py-2 mb-20'>Potforlio</h3>
+        <Image src={portfolio} alt="alternative" className='rounded-lg object-cover'  layout='responsive'/>
+          <p className='text-md py-5 leading-8 text-gray-800' >
+         My portfolio site to display some of my personal projects that I embark on a daily basis
+         </p>
+            
+          <a href="https://github.com/mahowino/my-portfolio" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Check the code
+          </a>
         </div>
         </div>
       </section>
